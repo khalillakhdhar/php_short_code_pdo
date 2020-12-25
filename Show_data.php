@@ -1,4 +1,11 @@
+<?php
+include("imports.php");
+include("nav.php");
 
+include("./models/crud_user.php");
+$us = new User();
+$liste = $us->list();
+?>
                             <table >
                                 <thead>
                                     <tr>
